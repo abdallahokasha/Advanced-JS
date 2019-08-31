@@ -25,6 +25,11 @@ b = {}; // re-assigne the whole object chnages it's reference to a new one.
 
 console.log(b, " ", c);
 
-// the assignment operator changes the reference when assigning total new empty object.
+// the assignment operator changes the reference when assigning a totally new empty object.
 
 // JS always passing by reference.
+
+/* 
+Re-assigne new values to primitative or object always changes the reference, 
+but mutating the value will keep the refernece and not change it.
+ */
