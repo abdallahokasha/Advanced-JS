@@ -54,7 +54,7 @@ console.log(
   Person.prototype.constructor === Employee.__proto__.prototype.constructor
 );
 
-// what extends do !
+// what "extends" do !
 console.log(
   "(Person === Employee.__proto__) ? ",
   Person === Employee.__proto__
