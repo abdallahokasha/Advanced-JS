@@ -73,3 +73,27 @@ if (Array(myArray).length !== 0)
       Array(myArray)
     );
 // ----------------------------------
+function Circle(radius) {
+  this.radius = radius;
+  this.draw = function() {
+    console.log("draw");
+  };
+}
+const circle = new Circle();
+circle.location = { x: 1 };
+const propertyName = "location on map";
+circle[propertyName] = { x: 1 }; // circle.propertyName
+
+delete circle.location; // delete circle["location"]
+// -------------------------------
+
+const circle10 = new Circle(10);
+
+for (let key in circle10) {
+  if (typeof circle10[key] !== "function") console.log(key, circle10[key]);
+}
+
+const keys = Object.keys(circle10);
+console.log("circle10 keys: ", keys);
+
+if ("radius" in circle10) console.log("Circle10 has radius.");
